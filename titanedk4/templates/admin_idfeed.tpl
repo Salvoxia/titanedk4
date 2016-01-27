@@ -15,7 +15,6 @@ function checkAll(checkname, exby)
 		<tr style='text-align: left;'>
 			<th>Feed URL</th>
 			<th>Last Kill</th>
-			<th>Trusted</th>
 			<th>Fetch</th>
 			<th>Delete</th>
 		</tr>
@@ -26,9 +25,6 @@ function checkAll(checkname, exby)
 			</td>
 			<td>
 				<input type='text' name='lastkill{$i.name}' class='lastkill' size='10' value='{$i.lastkill}' />
-			</td>
-			<td>
-				<input type='checkbox' name='trusted[]' class='trusted' value='{$i.name}' {if $i.trusted}checked="checked"{/if} />
 			</td>
 			<td>
 				<input type='checkbox' name='fetch_feed[]' class='fetch' value='{$i.name}' {if $i.fetch}checked="checked"{/if} />
@@ -43,10 +39,6 @@ function checkAll(checkname, exby)
 				<i>Example: http://killboard.domain.com/?a=idfeed</i>
 			</td>
 			<td>
-				<input type='checkbox' name='allt' onclick='checkAll("trusted[]",this)' />
-				<i>all/none</i>
-			</td>
-			<td>
 				<input type='checkbox' name='allf' onclick='checkAll("fetch_feed[]",this)' />
 				<i>all/none</i>
 			</td>
@@ -55,5 +47,12 @@ function checkAll(checkname, exby)
 		</tr>
 	</table>
 	<br />
+        <div class='block-header2'>Options</div><table>
+        <table>
+            <tr>
+                <td style='height:30px; width:150px'>Ignore NPC only deaths?</td>
+                <td><input type='checkbox' name='post_no_npc_only_feed' id='post_no_npc_only_feed' {if $post_no_npc_only_feed}checked="checked"{/if} /></td>
+            </tr>
+        </table>
 	<br />
 	<input type='submit' id='submitOptions' name='submit' value="Save" /></form>

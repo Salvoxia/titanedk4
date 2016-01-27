@@ -7,7 +7,8 @@
 	</a>
 </p>
 		<div class="mod_name">{$themeInfo.name} by <a href="http://gate.eveonline.com/profile/vecati">Vecati</a></div>
-		<div class="mod_abstract">Download {$themeInfo.info} <a href="http://evekb.org/forum/viewtopic.php?f=1033&t=18159">here</a>.<br><br>
+		{$themeInfo.info} 
+		<div class="mod_abstract">Download <a href="http://evekb.org/forum/viewtopic.php?f=1033&t=18159">here</a>.<br><br>
 Do not remove or edit either the footer or copyright.</div>
 </div>
 <!-- /about_theme -->
