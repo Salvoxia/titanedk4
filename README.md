@@ -10,6 +10,10 @@ Upload the titanedk4 folder to your killboard/themes folder. Select the theme in
 
 ##Changelog after initial release
 
+#####2016/07/02
+
+* Added support for displaying daily stats summaries on the front page
+
 #####2016/02/09
 
 * IDFeed: Added option to ignore NPC only kills
