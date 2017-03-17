@@ -10,6 +10,11 @@ Upload the titanedk4 folder to your killboard/themes folder. Select the theme in
 
 ##Changelog after initial release
 
+#####2017/03/17
+
+* Fix: Kill Lists show kill system security status in the proper color
+* Removed the "combined" modifier from zKBFetch example URL
+
 #####2016/07/02
 
 * Added support for displaying daily stats summaries on the front page
